@@ -18,16 +18,36 @@ main {
     display: flex;
 }
 
+@media only screen and (max-width: 1000px) {
+    .content {
+        width: 90%;
+        display: block;
+    }
+}
+
+.mainContent {
+    display: block;
+    width: 100%;
+}
+
 .articleCard {
     background-color: white;
     width: 100%;
     height: fit-content;
     padding-bottom: 2rem;
+    border-top-color: #43BDFF;
+    border-top-style: solid;
+    border-top-width: 0.2rem;
+    margin-bottom: 3rem;
 }
 
 .articleCard img {
     width: 100%;
     margin-bottom: 1rem;
+}
+
+.articleText {
+    padding: 1rem;
 }
 
 .articleHeading {
@@ -52,6 +72,15 @@ main {
 .briefing {
     background-color: white;
     margin-bottom: 3rem;
+    border-top-color: #43BDFF;
+    border-top-style: solid;
+    border-top-width: 0.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .briefing {
+        display: none;
+    }
 }
 
 .briefing h3 {
@@ -64,6 +93,13 @@ main {
 .subscribeAd {
     background-color: #43BDFF;
     padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .subscribeAd {
+        display: none;
+    }
 }
 
 .subscribeButton {
@@ -92,4 +128,144 @@ main {
     color: red;
     font-size: 2rem;
     margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    justify-items: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #747474
+}
+
+.navbar a:visited {
+    color: black;
+}
+
+.navbar a:link {
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        width: 90%;
+    }
+}
+
+nav img {
+    width: 15%;
+    margin-right: 1rem;
+}
+
+.navContainer {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    padding-top: 0.5rem;
+    margin-bottom: 3rem;
+    border-bottom-style: solid;
+    border-bottom-color: #43BDFF;
+    border-bottom-width: 0.3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navContainer ul {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navContainer img {
+        width: 20%;
+    }
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: rgb(239, 239, 239);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    width: 75%;
+    text-align: left;
+    float: left;
+    font-size: 16px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.dropdownContent a:hover {
+    background-color: red;
+}
+
+.mobileNav {
+    display: flex;
+    justify-content: right;
+}
+
+.sidePanelDropdownBtn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: #818181;
+}
+
+.sidePanelDropdownBtn:hover {
+    color: #f1f1f1;
+}
+
+.activeDropdown {
+    background-color: darkgrey;
+    color: white;
+}
+
+.sidePanelDropdownContainer {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
 }

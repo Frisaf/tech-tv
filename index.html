@@ -5,20 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech TV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div class="content">
-            <div class="articleCard">
-                <p class="category">Ny hårdvara</p>
-                <img src="images/laptop-5673901_1920.jpg">
-                <span class="breaking">Nytt: </span><span class="articleHeading"> Ny dator slår rekord - "Har aldrig sett så hög FPS"<span>
+        <div class="navContainer">
+            <nav>
+                <img src="images/Tech TV logo.png">
+                <ul class="navbar">
+                    <li class="dropdown">Gaming <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    <div class="dropdownContent">
+                        <a href="">Spelnyheter</a>
+                        <a href="">Gamingtips</a>
+                        <a href="">PC</a>
+                        <a href="">Konsoll</a>
+                        <a href="">Mobil</a>
+                    </div>
+                    <li class="dropdown">Hårdvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    <div class="dropdownContent">
+                        <a href="">Ny hårdvara</a>
+                        <a href="">Retro</a>
+                        <a href="">Mobiler</a>
+                        <a href="">Bärbara datorer</a>
+                        <a href="">Stationära datorer</a>
+                        <a href="">Tablets</a>
+                        <a href="">TV</a>
+                        <a href="">Komponenter</a>
+                    </div>
+                    <li class="dropdown">Mjukvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    <div class="dropdownContent">
+                        <a href="">Design</a>
+                        <a href="">Spelutveckling</a>
+                    </div>
+                    <li><a href="">Recensioner</a></li>
+                    <li><a href="">Teknikbranchen</a></li>
+                    <li><a href="">Om oss</a></li>
+                </ul>
+            </nav>
+            <div class="mobileNav">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </div>
-
+        </div>
+        <div class="content">
+            <div class="mainContent">
+                <div class="articleCard">
+                    <p class="category">Ny hårdvara</p>
+                    <img src="images/laptop-5673901_1920.jpg">
+                    <div class="articleText">
+                        <span class="breaking">NYTT:</span><span class="articleHeading">Ny dator slår rekord - "Har aldrig sett så hög FPS"<span>
+                    </div>
+                </div>
+                <div class="articleCard">
+                    <p class="category">Teknikbranchen</p>
+                    <img src="images/coding-1853305_1920.jpg">
+                    <div class="articleText">
+                        <span class="articleHeading">Hundratals utvecklare utan jobb<span>
+                    </div>
+                </div>
+            </div>
             <div class="sidebar">
                 <div class="briefing">
                     <h3>Senaste inom gaming</h3>
@@ -40,9 +86,22 @@
                         <span>Prenumerera!</span>
                     </div>
                 </div>
+                <div class="briefing">
+                    <h3>Mest lästa</h3>
+                    <div class="articleLink">
+                        <span class="briefingText">De tio största svenska spelen 2024</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                    </div>
+                    <div class="articleLink">
+                        <span class="briefingText">Tekniska muséets nya utställning</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                    </div>
+                    <div class="articleLink">
+                        <span class="briefingText">De mest prisvärda grafikkorten idag</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                    </div>
+                </div>
             </div>
         </div>
         
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
