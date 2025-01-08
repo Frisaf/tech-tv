@@ -87,6 +87,7 @@ main {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0;
 }
 
@@ -189,14 +190,27 @@ nav img {
 }
 
 @media only screen and (max-width: 1000px) {
-    .navContainer ul {
+    .navContainer li {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .navContainer img {
         width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .navContainer svg {
+        display: none;
     }
 }
 
@@ -239,7 +253,8 @@ nav img {
 
 .mobileNav {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    justify-self: right;
 }
 
 .sidePanelDropdownBtn {
@@ -268,4 +283,72 @@ nav img {
     display: none;
     background-color: #262626;
     padding-left: 8px;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidePanelMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #c6c6c6;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidePanelMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #181818;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidePanelMenu a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.openbtn {
+    font-size: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: none;
+    justify-self: right;
+}
+
+.sidePanelDropdownBtn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: #181818;
+}
+
+.activeDropdown {
+    background-color: darkgrey;
+    color: white;
 }
