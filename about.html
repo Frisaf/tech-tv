@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech TV</title>
+    <title>Tech TV - Om oss</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,44 +12,45 @@
 </head>
 <body>
     <main>
-        <div class="navContainer">
-            <nav>
-                <img src="images/Tech TV logo.png">
-                <ul class="navbar">
-                    <li class="dropdown">Gaming <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
-                    <div class="dropdownContent">
-                        <a href="">Spelnyheter</a>
-                        <a href="">Gamingtips</a>
-                        <a href="">PC</a>
-                        <a href="">Konsoll</a>
-                        <a href="">Mobil</a>
-                    </div>
-                    <li class="dropdown">Hårdvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
-                    <div class="dropdownContent">
-                        <a href="">Ny hårdvara</a>
-                        <a href="">Retro</a>
-                        <a href="">Mobiler</a>
-                        <a href="">Bärbara datorer</a>
-                        <a href="">Stationära datorer</a>
-                        <a href="">Tablets</a>
-                        <a href="">TV</a>
-                        <a href="">Komponenter</a>
-                    </div>
-                    <li class="dropdown">Mjukvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
-                    <div class="dropdownContent">
-                        <a href="">Design</a>
-                        <a href="">Spelutveckling</a>
-                    </div>
-                    <li><a href="">Recensioner</a></li>
-                    <li><a href="">Teknikbranchen</a></li>
-                    <li><a href="">Om oss</a></li>
-                    
+        <header>
+            <div class="headerContainer">
+                <a href="index.html"><img src="images/TechTVlogo.png" class="logoLink"></a>
+                <nav>
+                    <ul class="navbar">
+                        <li class="dropdown">Gaming <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                        <div class="dropdownContent">
+                            <a href="">Spelnyheter</a>
+                            <a href="">Gamingtips</a>
+                            <a href="">PC</a>
+                            <a href="">Konsoll</a>
+                            <a href="">Mobil</a>
+                        </div>
+                        <li class="dropdown">Hårdvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                        <div class="dropdownContent">
+                            <a href="">Ny hårdvara</a>
+                            <a href="">Retro</a>
+                            <a href="">Mobiler</a>
+                            <a href="">Bärbara datorer</a>
+                            <a href="">Stationära datorer</a>
+                            <a href="">Tablets</a>
+                            <a href="">TV</a>
+                            <a href="">Komponenter</a>
+                        </div>
+                        <li class="dropdown">Mjukvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                        <div class="dropdownContent">
+                            <a href="">Design</a>
+                            <a href="">Spelutveckling</a>
+                        </div>
+                        <li><a href="">Recensioner</a></li>
+                        <li><a href="">Teknikbranschen</a></li>
+                        <li class="navSubscribe" id="ad"><a href="">Prenumerera!</a></li>
+                    </ul>
                     <button class="openbtn" onclick="openNav()">&#9776;</button>
                     <div class="mobileNav">
                         <div id="sidePanel" class="sidePanelMenu">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                             <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
-                                Home</a>
+                                Hem</a>
                             <button class="sidePanelDropdownBtn">
                                 <i class="fa fa-caret-down"></i>
                                 <i class="fa fa-gamepad" aria-hidden="true"></i>
@@ -89,67 +90,51 @@
                             <a href=""><i class="fa fa-book" aria-hidden="true"></i>
                                 Recensioner</a>
                             <a href=""><i class="fa fa-briefcase" aria-hidden="true"></i>
-                                Teknikbranchen</a>
-                            <a href=""><i class="fa fa-info-circle" aria-hidden="true"></i>
+                                Teknikbranschen</a>
+                            <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
                                 Om oss</a>
+                            <a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                Konto</a>
+                            <p class="navSubscribe" id="mobileAd"><a href="">Prenumerera!</a></p>
                         </div>
                     </div>
-                </ul>
-            </nav>
-        </div>
+                </nav>
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#020202"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+            </div>
+        </header>
+        
         <div class="content">
             <div class="mainContent">
-                <div class="articleCard">
-                    <p class="category">Ny hårdvara</p>
-                    <img src="images/laptop-5673901_1920.jpg">
-                    <div class="articleText">
-                        <span class="breaking">NYTT:</span><span class="articleHeading">Ny dator slår rekord - "Har aldrig sett så hög FPS"<span>
-                    </div>
-                </div>
-                <div class="articleCard">
-                    <p class="category">Teknikbranchen</p>
-                    <img src="images/coding-1853305_1920.jpg">
-                    <div class="articleText">
-                        <span class="articleHeading">Hundratals utvecklare utan jobb<span>
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar">
-                <div class="briefing">
-                    <h3>Senaste inom gaming</h3>
-                    <div class="articleLink">
-                        <span class="briefingText">De tio största svenska spelen 2024</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-                    </div>
-                    <div class="articleLink">
-                        <span class="briefingText">Spelen att se fram emot 2025</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-                    </div>
-                    <div class="articleLink">
-                        <span class="briefingText">Sätter Gamingsverige på kartan</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-                    </div>
-                </div>
-                <div class="subscribeAd">
-                    <h2>Är du inte prenumerant!?</h2>
-                    <p>Att inte prenumerera på Tech TV är så 2024. Prenumerera idag och få tillgång till exklusiva premiumartiklar och andra bonusar!</p>
-                    <p>Anpassa din Tech TV-upplevelse idag!</p>
-                    <div class="subscribeButton">
-                        <span>Prenumerera!</span>
-                    </div>
-                </div>
-                <div class="briefing">
-                    <h3>Mest lästa</h3>
-                    <div class="articleLink">
-                        <span class="briefingText">De tio största svenska spelen 2024</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-                    </div>
-                    <div class="articleLink">
-                        <span class="briefingText">Tekniska muséets nya utställning</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-                    </div>
-                    <div class="articleLink">
-                        <span class="briefingText">De mest prisvärda grafikkorten idag</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#31393C"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-                    </div>
+                <div class="articleContent">
+                    <h1>Om oss på Tech TV</h1>
+                    <p>Tech TV:s uppdrag är att leverera oberoende, neutrala och faktabaserade tekniknyheter från hela Sverige. Våra nyhetsbyråer och reportrar jobbar dygnet runt, över hela Sverige, för att rapportera om teknikens under, från Malmö i söder till Kiruna i norr. Vårt mål är att uppnå en värld där tekniknyheter är lättåtkomliga, och oberoende.</p>
+                    <p>Vi jobbar dygnet runt med att leverera så oberoende och neutrala nyheter som möjligt och tar till oss all konstruktiv kritik som vår kommunikationsavdelning tar emot. Vår granskningsavdelning granskar de artiklar som publiceras och jobbar aktivt med våra reportrar för att se till att vinklingen är rak.</p>
+                    <p>Vi finansieras tack vare dig som väljer våra tjänster och köper våra veckotidningar, men vill du ta del av premiumfunktioner samt läsa premiumartiklar kan du redan idag köpa premiumpaketet som går att skräddarsy efter just dina behov. Premiumpaketets pris justeras efter dina val.</p>
+                    <h2>Produkter och Tjänster</h2>
+                    <p>Vi erbjuder kanalen Tech TV som finns att nå på kanal 123 i din TV-apparat, en webbplats, en app i mobilen och en barnvänlig person som erbjuder allmänbildande nyheter i ett mer barnvänligt format. Vi erbjuder dessutom en veckotidning för de som föredrar att läsa sina nyheter analogt.</p>
+                    <h2>Det som gör oss unika</h2>
+                    <p>Det som gör oss på Tech TV unika är att vi är centrerade på svensk teknik och de tekniska framsteg som görs i Sverige. Många tekniktidningar riktar sig på internationella framsteg, vilket gör att många saker som händer i Sverige blir överskuggade av det som händer i exempelvis Silicon Valley. Vi vill främja Sverige i teknikens värld och få upp folks ögon för Tekniksverige.</p>
                 </div>
             </div>
         </div>
-        
+        <footer>
+            <div class="footerBox">
+                <img src="images/TechTVlogo.png">
+                <p>Tech TV</p>
+                <p>Hittepågatan 69B</p>
+                <p>420 69 Borås</p>
+            </div>
+            <div class="footerBox">
+                <h4>Kontakt</h4>
+                <p>TechTV@mail.se</p>
+                <p>070 420 69 69</p>
+            </div>
+            <div class="footerBox">
+                <p><a href="about.html">Om oss</a></p>
+                <i class="fa fa-copyright" aria-hidden="true"></i> <span>Ash Säfsten</span>
+                <p><strong>DETTA ÄR INTE ETT RIKTIGT FÖRETAG. ALLTING SOM ÄR SKRIVET HÄR ÄR PÅ LÅTSAS.</strong></p>
+            </div>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>

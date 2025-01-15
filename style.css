@@ -4,7 +4,6 @@ main, body {
     font-family: "Ubuntu", serif;
     font-style: normal;
     font-size: 1.1rem;
-    align-items: center;
     background-color: #F2F2F2;
 }
 
@@ -28,6 +27,19 @@ main {
 .mainContent {
     display: block;
     width: 100%;
+    line-height: 2rem;
+}
+
+.articleContent {
+    width: 60%;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .articleContent {
+        padding-inline: 20px;
+        width: 100%;
+    }
 }
 
 .articleCard {
@@ -139,7 +151,7 @@ main {
     padding: 0;
     margin: 0;
     background-color: white;
-    justify-items: space-between;
+    align-items: center;
 }
 
 .navbar a {
@@ -161,56 +173,99 @@ main {
 nav {
     display: flex;
     align-items: center;
-    width: 75%;
     color: black;
     font-weight: bold;
 }
 
-@media only screen and (max-width: 1000px) {
-    nav {
-        width: 90%;
-    }
-}
-
-nav img {
-    width: 15%;
-    margin-right: 1rem;
-}
-
-.navContainer {
+header {
     background-color: white;
     width: 100%;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     padding-top: 0.5rem;
     margin-bottom: 3rem;
     border-bottom-style: solid;
     border-bottom-color: #43BDFF;
     border-bottom-width: 0.3rem;
+    gap: 1rem;
+}
+
+.headerContainer {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navSubscribe {
+    background-color: #2E318A;
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
-    .navContainer li {
+    .navSubscribe {
+        margin-left: 32px;
+        width: 12rem;
+        height: 3rem;
+    }
+}
+
+#ad a {
+    color: white;
+    font-weight: normal;
+}
+
+#mobileAd a {
+    all: initial;
+    color: white;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar li {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .navContainer img {
-        width: 20%;
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    .navContainer button {
+    header button {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header svg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .headerContainer {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerContainer {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .navbar {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .headerContainer a {
+        margin-left: 10px;
     }
 }
 
@@ -230,6 +285,7 @@ nav img {
     position: relative;
     display: flex;
     cursor: pointer;
+    align-items: center;
 }
 
 .dropdown:hover .dropdownContent {
@@ -251,72 +307,25 @@ nav img {
     background-color: #c4c4c4;
 }
 
-.mobileNav {
-    display: flex;
-    justify-content: center;
-    justify-self: right;
-}
-
-.sidePanelDropdownBtn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    background: none;
-    border: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    color: #818181;
-    font-weight: bold;
-}
-
-.sidePanelDropdownBtn:hover {
-    color: #f1f1f1;
-}
-
-.activeDropdown {
-    background-color: darkgrey;
-    color: white;
-}
-
-.sidePanelDropdownContainer {
-    display: none;
-    background-color: #888888;
-    padding-left: 8px;
-}
-
-.sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .sidePanelMenu {
+.sidePanelMenu {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    background-color: #c6c6c6;
+    background-color: #cccccc;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
 }
 
 .sidePanelMenu a {
-    padding: 6px 8px 6px 16px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #181818;
+    color: #0f0f0f;
     display: block;
     transition: 0.3s;
-}
-
-.sidePanelMenu a:hover {
-    color: #f1f1f1;
 }
 
 .sidepanel .closebtn {
@@ -331,9 +340,15 @@ nav img {
     font-size: 50px;
     cursor: pointer;
     background-color: transparent;
+    color: #0f0f0f;
     padding: 10px 15px;
     border: none;
     justify-self: right;
+}
+
+.mobileNav {
+    display: flex;
+    justify-content: right;
 }
 
 .sidePanelDropdownBtn {
@@ -346,10 +361,54 @@ nav img {
     text-align: left;
     cursor: pointer;
     outline: none;
-    color: #181818;
+    color: #0f0f0f;
+}
+
+.sidePanelDropdownBtn:hover {
+    color: #3e3e3e;
 }
 
 .activeDropdown {
-    background-color: darkgrey;
-    color: #181818;
+    background-color: #b7b7b7;
+    color: #3e3e3e;
+}
+
+.sidePanelDropdownContainer {
+    display: none;
+    background-color: #ffffff;
+    padding-left: 8px;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    border-top-color: #43BDFF;
+    border-top-style: solid;
+    border-top-width: 0.3rem;
+    margin-top: 3rem;
+}
+
+.footerBox {
+    width: 30%;
+}
+
+.footerBox a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        display: block;
+        padding-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footerBox {
+        width: 70%;
+    }
 }
