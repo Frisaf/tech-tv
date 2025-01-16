@@ -14,7 +14,7 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 function openNav() {
-    document.getElementById("sidePanel").style.width = "275px";
+    document.getElementById("sidePanel").style.width = "290px";
 }
 
 function closeNav() {
