@@ -31,15 +31,14 @@ main {
 }
 
 .articleContent {
-    width: 60%;
+    width: 40%;
     justify-self: center;
     text-wrap: pretty;
 }
 
 @media only screen and (max-width: 1000px) {
     .articleContent {
-        padding-inline: 20px;
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -426,5 +425,41 @@ footer {
 @media only screen and (max-width: 1000px) {
     .footerBox {
         width: 70%;
+    }
+}
+
+.hero {
+    background-color: black;
+    position: relative;
+    margin-bottom: 3rem;
+
+}
+
+.hero img {
+    width: 100%;
+    opacity: 0.4;
+}
+
+.heroText {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.heroText h1 {
+    font-size: 7rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .heroText h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .heroText {
+        left: 7.5%;
+        top: 20%;
     }
 }
