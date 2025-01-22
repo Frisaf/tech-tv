@@ -25,7 +25,7 @@ main {
 }
 
 .mainContent {
-    display: block;
+    display: grid;
     width: 100%;
     line-height: 2rem;
 }
