@@ -27,12 +27,12 @@ main {
 .mainContent {
     display: grid;
     width: 100%;
-    line-height: 2rem;
+    line-height: 2;
 }
 
 .articleContent {
     width: 40%;
-    justify-self: center;
+    margin-inline: auto;
     text-wrap: pretty;
 }
 
@@ -432,6 +432,7 @@ footer {
     background-color: black;
     position: relative;
     margin-bottom: 3rem;
+    line-height: 0;
 
 }
 
@@ -449,6 +450,7 @@ footer {
 
 .heroText h1 {
     font-size: 7rem;
+    line-height: 1;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -462,4 +464,24 @@ footer {
         left: 7.5%;
         top: 20%;
     }
+}
+
+.staff {
+    display: flex;
+    width: 50%;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.staffInfo img {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.staffInfo {
+    text-align: center;
+    line-height: 1;
+    margin-inline: 50px;
+    margin-bottom: 25px;
 }

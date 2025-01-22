@@ -11,22 +11,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main>
-        <header>
-            <div class="headerContainer">
-                <a href="index.html"><img src="images/TechTVlogo.png" class="logoLink" alt="Logotyp med en grön kurvig linje som bakgrund och texten 'Tech TV'."></a>
-                <nav>
-                    <ul class="navbar">
-                        <li class="dropdown">Gaming <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
-                        <div class="dropdownContent">
+    <header>
+        <div class="headerContainer">
+            <a href="index.html"><img src="images/TechTVlogo.png" class="logoLink" alt="Logotyp med en grön kurvig linje som bakgrund och texten 'Tech TV'."></a>
+            <nav>
+                <ul class="navbar">
+                    <li class="dropdown">Gaming <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    <div class="dropdownContent">
+                        <a href="">Spelnyheter</a>
+                        <a href="">Gamingtips</a>
+                        <a href="">PC</a>
+                        <a href="">Konsoll</a>
+                        <a href="">Mobil</a>
+                    </div>
+                    <li class="dropdown">Hårdvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    <div class="dropdownContent">
+                        <a href="">Ny hårdvara</a>
+                        <a href="">Retro</a>
+                        <a href="">Mobiler</a>
+                        <a href="">Bärbara datorer</a>
+                        <a href="">Stationära datorer</a>
+                        <a href="">Tablets</a>
+                        <a href="">TV</a>
+                        <a href="">Komponenter</a>
+                    </div>
+                    <li class="dropdown">Mjukvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                    <div class="dropdownContent">
+                        <a href="">Design</a>
+                        <a href="">Spelutveckling</a>
+                    </div>
+                    <li><a href="">Recensioner</a></li>
+                    <li><a href="">Teknikbranschen</a></li>
+                    <li class="navSubscribe" id="ad"><a href="">Prenumerera!</a></li>
+                </ul>
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <div class="mobileNav">
+                    <div id="sidePanel" class="sidePanelMenu">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                            Hem</a>
+                        <button class="sidePanelDropdownBtn">
+                            <i class="fa fa-caret-down"></i>
+                            <i class="fa fa-gamepad" aria-hidden="true"></i>
+                            Gaming
+                        </button>
+                        <div class="sidePanelDropdownContainer">
                             <a href="">Spelnyheter</a>
                             <a href="">Gamingtips</a>
                             <a href="">PC</a>
                             <a href="">Konsoll</a>
                             <a href="">Mobil</a>
                         </div>
-                        <li class="dropdown">Hårdvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
-                        <div class="dropdownContent">
+                        <button class="sidePanelDropdownBtn">
+                            <i class="fa fa-caret-down"></i>
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                            Hårdvara
+                        </button>
+                        <div class="sidePanelDropdownContainer">
                             <a href="">Ny hårdvara</a>
                             <a href="">Retro</a>
                             <a href="">Mobiler</a>
@@ -36,73 +77,31 @@
                             <a href="">TV</a>
                             <a href="">Komponenter</a>
                         </div>
-                        <li class="dropdown">Mjukvara <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M480-360 280-560h400L480-360Z"/></svg>
-                        <div class="dropdownContent">
+                        <button class="sidePanelDropdownBtn">
+                            <i class="fa fa-caret-down"></i>
+                            <i class="fa fa-rocket" aria-hidden="true"></i>
+                            Mjukvara
+                        </button>
+                        <div class="sidePanelDropdownContainer">
                             <a href="">Design</a>
                             <a href="">Spelutveckling</a>
                         </div>
-                        <li><a href="">Recensioner</a></li>
-                        <li><a href="">Teknikbranschen</a></li>
-                        <li class="navSubscribe" id="ad"><a href="">Prenumerera!</a></li>
-                    </ul>
-                    <button class="openbtn" onclick="openNav()">&#9776;</button>
-                    <div class="mobileNav">
-                        <div id="sidePanel" class="sidePanelMenu">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
-                                Hem</a>
-                            <button class="sidePanelDropdownBtn">
-                                <i class="fa fa-caret-down"></i>
-                                <i class="fa fa-gamepad" aria-hidden="true"></i>
-                                Gaming
-                            </button>
-                            <div class="sidePanelDropdownContainer">
-                                <a href="">Spelnyheter</a>
-                                <a href="">Gamingtips</a>
-                                <a href="">PC</a>
-                                <a href="">Konsoll</a>
-                                <a href="">Mobil</a>
-                            </div>
-                            <button class="sidePanelDropdownBtn">
-                                <i class="fa fa-caret-down"></i>
-                                <i class="fa fa-desktop" aria-hidden="true"></i>
-                                Hårdvara
-                            </button>
-                            <div class="sidePanelDropdownContainer">
-                                <a href="">Ny hårdvara</a>
-                                <a href="">Retro</a>
-                                <a href="">Mobiler</a>
-                                <a href="">Bärbara datorer</a>
-                                <a href="">Stationära datorer</a>
-                                <a href="">Tablets</a>
-                                <a href="">TV</a>
-                                <a href="">Komponenter</a>
-                            </div>
-                            <button class="sidePanelDropdownBtn">
-                                <i class="fa fa-caret-down"></i>
-                                <i class="fa fa-rocket" aria-hidden="true"></i>
-                                Mjukvara
-                            </button>
-                            <div class="sidePanelDropdownContainer">
-                                <a href="">Design</a>
-                                <a href="">Spelutveckling</a>
-                            </div>
-                            <a href=""><i class="fa fa-book" aria-hidden="true"></i>
-                                Recensioner</a>
-                            <a href=""><i class="fa fa-briefcase" aria-hidden="true"></i>
-                                Teknikbranschen</a>
-                            <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
-                                Om oss</a>
-                            <a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                                Konto</a>
-                            <p class="navSubscribe" id="mobileAd"><a href="">Prenumerera!</a></p>
-                        </div>
+                        <a href=""><i class="fa fa-book" aria-hidden="true"></i>
+                            Recensioner</a>
+                        <a href=""><i class="fa fa-briefcase" aria-hidden="true"></i>
+                            Teknikbranschen</a>
+                        <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>
+                            Om oss</a>
+                        <a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            Konto</a>
+                        <p class="navSubscribe" id="mobileAd"><a href="">Prenumerera!</a></p>
                     </div>
-                </nav>
-                <a href="" id="accountLink"><img src="images/accountcircle.png" class="headerAccount" alt="Svart cirkel med en silluett av en person."></a>
-            </div>
-        </header>
-
+                </div>
+            </nav>
+            <a href="" id="accountLink"><img src="images/accountcircle.png" class="headerAccount" alt="Svart cirkel med en silluett av en person."></a>
+        </div>
+    </header>
+    <main>
         <div class="content">
             <div class="mainContent">
                 <div class="articleCard">
@@ -163,7 +162,7 @@
                 <p>420 69 Borås</p>
             </div>
             <div class="footerBox">
-                <h4>Kontakt</h4>
+                <p><strong>Kontakt</strong></p>
                 <p>TechTV@mail.se</p>
                 <p>070 420 69 69</p>
             </div>
