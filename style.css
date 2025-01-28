@@ -12,6 +12,10 @@ main {
     justify-items: center;
 }
 
+h1, h2 {
+    margin-top: 60px;
+}
+
 .content {
     width: 75%;
     display: flex;
@@ -46,7 +50,6 @@ main {
     background-color: white;
     width: 100%;
     height: fit-content;
-    padding-bottom: 2rem;
     border-top-color: #43BDFF;
     border-top-style: solid;
     border-top-width: 0.2rem;
@@ -55,11 +58,11 @@ main {
 
 .articleCard img {
     width: 100%;
-    margin-bottom: 1rem;
 }
 
 .articleText {
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
 }
 
 .articleHeading {
@@ -107,6 +110,10 @@ main {
     background-color: #43BDFF;
     padding: 1rem;
     margin-bottom: 3rem;
+}
+
+.subscribeAd h2 {
+    margin-top: unset;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -430,10 +437,9 @@ footer {
 
 .hero {
     background-color: black;
-    position: relative;
-    margin-bottom: 3rem;
-    line-height: 0;
-
+    display: grid;
+    grid-template-areas: "hero";
+    place-items: center;
 }
 
 .hero img {
@@ -443,9 +449,13 @@ footer {
 
 .heroText {
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    .heroText {
+        width: 85%;
+    }
 }
 
 .heroText h1 {
@@ -453,16 +463,13 @@ footer {
     line-height: 1;
 }
 
-@media only screen and (max-width: 1000px) {
-    .heroText h1 {
-        font-size: 3rem;
-    }
+.hero > * {
+    grid-area: hero;
 }
 
 @media only screen and (max-width: 1000px) {
-    .heroText {
-        left: 7.5%;
-        top: 20%;
+    .heroText h1 {
+        font-size: 3rem;
     }
 }
 
