@@ -38,10 +38,22 @@ h1, h2 {
     line-height: 2;
 }
 
+.mainContent a {
+    text-decoration: none;
+}
+
+.mainContent a:visited {
+    color: inherit;
+}
+
 .articleContent {
     width: 40%;
     margin-inline: auto;
     text-wrap: pretty;
+}
+
+.articleContent h1 {
+    margin-top: 3px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -64,6 +76,10 @@ h1, h2 {
     width: 100%;
 }
 
+.articleCard .category {
+    padding-left: 1rem;
+}
+
 .articleText {
     padding-inline: 1rem;
     padding-bottom: 1rem;
@@ -74,7 +90,6 @@ h1, h2 {
 }
 
 .category {
-    padding-left: 1rem;
     color: #747474;
 }
 
