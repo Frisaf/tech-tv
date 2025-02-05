@@ -56,6 +56,11 @@ h1, h2 {
     margin-top: 3px;
 }
 
+.articleContent a:link {
+    color: inherit;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1000px) {
     .articleContent {
         width: 85%;
@@ -586,4 +591,55 @@ html[data-theme="light"] .darkIcon {
 }
 html[data-theme="light"] .lightIcon {
     display: block;
+}
+
+.colorDisplay {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1000px) {
+    .colorDisplay {
+        flex-wrap: wrap;
+    }
+}
+
+.colorCard {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    width: 100px;
+    text-align: center;
+    padding-inline: 10px;
+}
+
+#charlestonGreen {
+    background-color: #2A2A2A;
+    color: white;
+}
+
+#whiteSmoke {
+    background-color: #F2F2F2;
+    color: black;
+}
+
+#egyptianBlue {
+    background-color: #2E318A;
+    color: white;
+}
+
+#federalBlue {
+    background-color: #140D4F;
+    color: white;
+}
+
+#deepSkyBlue {
+    background-color: #43BDFF;
+    color: black;
+}
+
+#emerald {
+    background-color: #2DD881;
+    color: black;
 }
