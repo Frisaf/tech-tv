@@ -1,10 +1,21 @@
+:root {
+    --charlestonGreen: #2A2A2A;
+    --whiteSmoke: #F2F2F2;
+    --egyptianBlue: #2E318A;
+    --federalBlue: #140D4F;
+    --deepSkyBlue: #43BDFF;
+    --emerald: #2DD881;
+    --ubuntuFont: "Ubuntu", serif;
+    --jaroFont: "Jaro", sans-serif;
+}
+
 main, body {
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu", serif;
+    font-family: var(--ubuntuFont);
     font-style: normal;
     font-size: 1.1rem;
-    background-color: #F2F2F2;
+    background-color: var(--whiteSmoke);
 }
 
 img {
@@ -72,7 +83,7 @@ h1, h2 {
     background-color: white;
     width: 100%;
     height: fit-content;
-    border-top-color: #43BDFF;
+    border-top-color: var(--deepSkyBlue);
     border-top-style: solid;
     border-top-width: 0.2rem;
     margin-bottom: 3rem;
@@ -112,7 +123,7 @@ h1, h2 {
 .briefing {
     background-color: white;
     margin-bottom: 3rem;
-    border-top-color: #43BDFF;
+    border-top-color: var(--deepSkyBlue);
     border-top-style: solid;
     border-top-width: 0.2rem;
 }
@@ -132,7 +143,7 @@ h1, h2 {
 }
 
 .subscribeAd {
-    background-color: #43BDFF;
+    background-color: var(--deepSkyBlue);
     padding: 1rem;
     margin-bottom: 3rem;
     line-height: 150%;
@@ -149,7 +160,7 @@ h1, h2 {
 }
 
 .subscribeButton {
-    background-color: #2E318A;
+    background-color: var(--egyptianBlue);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -170,7 +181,7 @@ h1, h2 {
 }
 
 .breaking {
-    font-family: "Jaro", sans-serif;
+    font-family: var(--jaroFont);
     color: red;
     font-size: 2rem;
     margin-left: 1rem;
@@ -231,7 +242,7 @@ header {
 }
 
 .navSubscribe {
-    background-color: #2E318A;
+    background-color: var(--egyptianBlue);
     width: 10rem;
     height: 2rem;
     text-align: center;
@@ -537,7 +548,7 @@ footer {
 
 [data-theme="dark"] {
     body, main {
-        background-color: rgb(42, 42, 42);
+        background-color: var(--charlestonGreen);
     }
 
     .mainContent {
@@ -550,7 +561,7 @@ footer {
     }
 
     .articleCard, .briefing {
-        background-color: rgb(56, 56, 56);
+        background-color: var(--charlestonGreen);
         border-top-color: rgb(157, 217, 255);
     }
 
@@ -615,33 +626,33 @@ html[data-theme="light"] .lightIcon {
     padding-inline: 10px;
 }
 
-#charlestonGreen {
-    background-color: #2A2A2A;
+.charlestonGreen {
+    background-color: var(--charlestonGreen);
     color: white;
 }
 
-#whiteSmoke {
-    background-color: #F2F2F2;
+.whiteSmoke {
+    background-color: var(--whiteSmoke);
     color: black;
 }
 
-#egyptianBlue {
-    background-color: #2E318A;
+.egyptianBlue {
+    background-color: var(--egyptianBlue);
     color: white;
 }
 
-#federalBlue {
-    background-color: #140D4F;
+.federalBlue {
+    background-color: var(--federalBlue);
     color: white;
 }
 
-#deepSkyBlue {
-    background-color: #43BDFF;
+.deepSkyBlue {
+    background-color: var(--deepSkyBlue);
     color: black;
 }
 
-#emerald {
-    background-color: #2DD881;
+.emerald {
+    background-color: var(--emerald);
     color: black;
 }
 
@@ -649,6 +660,10 @@ html[data-theme="light"] .lightIcon {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.slideshow a {
+    color: white;
 }
 
 .slides {
@@ -662,12 +677,12 @@ html[data-theme="light"] .lightIcon {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.381);
 }
 
 .next {
@@ -680,21 +695,28 @@ html[data-theme="light"] .lightIcon {
 }
 
 .slideText {
-  color: #f2f2f2;
+  color: var(--whiteSmoke);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 20px;
   width: 100%;
   text-align: center;
+  background-color: #33333377;
+  width: max-content;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .numberText {
-  color: #f2f2f2;
+  color: var(--whiteSmoke);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  background-color: #33333377;
 }
 
 .dot {
@@ -720,4 +742,8 @@ html[data-theme="light"] .lightIcon {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+li.jaro {
+    font-family: var(--jaroFont);
 }
