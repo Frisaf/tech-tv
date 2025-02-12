@@ -621,7 +621,7 @@ html[data-theme="light"] .lightIcon {
     border-radius: 20px;
     border-style: solid;
     border-color: black;
-    width: 100px;
+    min-width: 90px;
     text-align: center;
     padding-inline: 10px;
 }
@@ -700,14 +700,12 @@ html[data-theme="light"] .lightIcon {
   padding: 8px 12px;
   position: absolute;
   bottom: 20px;
-  width: 100%;
   text-align: center;
   background-color: #33333377;
   width: max-content;
   height: 20px;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .numberText {

@@ -47,3 +47,11 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowLeft") {
+        plusSlides(-1);
+    } else if (event.key === "ArrowRight") {
+        plusSlides(1);
+    }
+});
