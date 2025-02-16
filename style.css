@@ -561,7 +561,7 @@ footer {
     }
 
     .articleCard, .briefing {
-        background-color: var(--charlestonGreen);
+        background-color: #222222;
         border-top-color: rgb(157, 217, 255);
     }
 
