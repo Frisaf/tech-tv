@@ -174,21 +174,29 @@
                 <span>420 69 Borås</span>
                 <p>Eller så fyller du i formuläret här nedanför.</p>
                 <p><em>* - obligatorisk fråga</em></p>
-                <form action="thankyou.html">
+                <form action="thankyou.html" autocomplete="off">
                     <label for="subject"><strong>Ämne*</strong></label><br>
                     <input type="text" id="subject" name="subject" required><br>
                     <label for="content"><strong>Innehåll*</strong></label><br>
-                    <textarea id="content" name="content" rows="7" cols="50" required></textarea><br>
-                    <label for="mail"><strong>Mail </strong></label><br>
+                    <textarea id="content" name="content" rows="7" cols="40" required></textarea><br>
+                    <label for="mail"><strong>Epostadress </strong></label><br>
                     <span><em>Detta är frivilligt, men vill du att vi ska kunna kontakta dig efteråt bör du fylla i detta</em></span><br>
                     <input type="text" id="mail" name="mail"><br>
                     <input type="submit" value="Skicka">
                 </form>
             </div>
         </div>
-        <div class="helpChat">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
+        <div id="chatContent">
+            <span>Behöver du hjälp med din prenumeration?</span>
+            <form>
+                <label for="message">Skicka ett meddelande och vårt supportteam kommer att hjälpa dig!</label><br>
+                <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
+                <button formaction="">Skicka</button>
+            </form>
         </div>
+        <button class="helpChat" onclick="showChat()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
+        </button>
     <footer>
         <div class="footerBox">
             <img src="images/TechTVlogo.png" alt="Logotyp med en grön kurvig linje som bakgrund och texten 'Tech TV'.">
@@ -213,5 +221,6 @@
     </main>
     <script src="theme.js"></script>
     <script src="script.js"></script>
+    <script src="helpchat.js"></script>
 </body>
 </html>
