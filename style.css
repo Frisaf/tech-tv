@@ -773,7 +773,13 @@ iframe {
     justify-self: right;
     background-color: white;
     padding: 10px;
-    display: none;
+    width: 600px;
+}
+
+@media only screen and (max-width: 660px) {
+    #chatContent {
+        width: fit-content;
+    }
 }
 
 #supportSend {
@@ -783,4 +789,18 @@ iframe {
     border-radius: 100%;
     padding: 10px;
     border: none;
+}
+
+#userMessage {
+    display: none;
+    max-width: 100%;
+}
+
+#staffMessage {
+    display: none;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
 }

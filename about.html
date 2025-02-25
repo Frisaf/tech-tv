@@ -186,15 +186,16 @@
                 </form>
             </div>
         </div>
-        <div id="chatContent">
+        <div id="chatContent" class="hidden">
             <span>Behöver du hjälp med din prenumeration?</span>
-            <form>
-                <label for="message">Skicka ett meddelande och vårt supportteam kommer att hjälpa dig!</label><br>
-                <textarea id="message" name="message" rows="5" cols="50" required></textarea><br>
-                <button formaction="">Skicka</button>
-            </form>
+            <p>Skicka ett meddelande och vårt supportteam kommer att hjälpa dig!</p>
+            <hr>
+            <p id="userMessage"></p>
+            <p id="staffMessage"></p>
+            <textarea id="message" name="message" rows="3" cols="50"></textarea><br>
+            <button onclick="sendMessage()">Skicka</button>
         </div>
-        <button class="helpChat" onclick="showChat()">
+        <button class="helpChat">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg>
         </button>
     <footer>
