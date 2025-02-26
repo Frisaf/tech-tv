@@ -237,8 +237,18 @@ header {
 .headerContainer {
     width: 75%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.logo {
+    margin-inline: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        margin-top: 20px;
+    }
 }
 
 .navSubscribe {
@@ -312,7 +322,7 @@ header {
 
 @media only screen and (max-width: 1000px) {
     .headerContainer {
-        justify-content: space-between;
+        justify-content: right;
     }
 }
 
@@ -760,6 +770,7 @@ iframe {
     border-radius: 100%;
     padding: 10px;
     border: none;
+    z-index: 1000;
 }
 
 .helpChat:hover {
@@ -774,6 +785,7 @@ iframe {
     background-color: white;
     padding: 10px;
     width: 600px;
+    z-index: 1000;
 }
 
 @media only screen and (max-width: 660px) {
