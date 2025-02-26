@@ -21,9 +21,11 @@ if (!preferredTheme) {
 
 html.dataset.theme = preferredTheme || defaultTheme;
 
-toggle.addEventListener("click", () => {
-    const isDarkTheme = localStorage.getItem("theme") === "dark";
-    const newTheme = isDarkTheme ? "light" : "dark"
-    localStorage.setItem("theme", newTheme);
-    html.dataset.theme = newTheme
-});
+if (toggle) {
+    toggle.addEventListener("click", () => {
+        const isDarkTheme = localStorage.getItem("theme") === "dark";
+        const newTheme = isDarkTheme ? "light" : "dark"
+        localStorage.setItem("theme", newTheme);
+        html.dataset.theme = newTheme
+    });
+}

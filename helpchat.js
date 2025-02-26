@@ -1,7 +1,6 @@
 const showChatButton = document.querySelector(".helpChat")
 
 showChatButton.addEventListener("click", (event) => {
-    console.log("click")
     var chat = document.getElementById("chatContent");
     chat.classList.toggle("hidden")
 })
