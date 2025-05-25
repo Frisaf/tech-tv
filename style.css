@@ -598,6 +598,10 @@ footer {
     .breaking {
         color: rgb(247, 134, 134);
     }
+
+    .articleDetails {
+        color: rgb(176, 176, 176);
+    }
 }
 
 .darkIcon {
